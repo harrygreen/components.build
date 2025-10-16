@@ -78,10 +78,10 @@ Ensure all content and interactions are announced properly to screen readers usi
 </nav>
 
 // ✅ Dynamic content announcements
-<div aria-live="polite" aria-atomic="true">
+<output aria-live="polite" aria-atomic="true">
   {isLoading && <span>Loading results...</span>}
   {results && <span>{results.length} results found</span>}
-</div>
+</output>
 ```
 
 ### 4. Visual Accessibility
